@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Financial Tool</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin-right: 10px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #0044cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0033aa;
+        }
+
+        #budget-alert {
+            font-weight: bold;
+        }
+
+        #goal-status {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>AI Financial Tool</h1>
+    </header>
+
+    <main>
+        <section class="expense-entry">
+            <h2>Add Expense</h2>
+            <input type="text" id="expense-description" placeholder="Description">
+            <input type="number" id="expense-amount" placeholder="Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </section>
+
+        <section class="dashboard">
+            <h2>Predictive Spending Analysis</h2>
+            <canvas id="spendingChart" width="400" height="400"></canvas>
+        </section>
+
+        <section class="goal-tracking">
+            <h2>Goal Tracking</h
